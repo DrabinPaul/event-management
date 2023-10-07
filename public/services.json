@@ -1,0 +1,85 @@
+[
+    {
+        "id": 1,
+        "name": "Dreamy Themes Wedding Decor",
+        "image": "https://images.pexels.com/photos/1779416/pexels-photo-1779416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "price": "$3,000 - $7,500",
+        "short_description": "Transforming your vision into reality.",
+        "details": "Dreamy Themes Wedding Decor specializes in creating magical and unique wedding themes. Our dedicated team of designers will work with you to bring your dream wedding theme to life.",
+        "button": "Book Now"
+    },
+    {
+        "id": 2,
+        "name": "Perfect Venue Selection",
+        "image": "https://images.pexels.com/photos/14703685/pexels-photo-14703685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "price": "$2,000 - $5,000",
+        "short_description": "Discover your dream wedding location.",
+        "details": "Perfect Venue Selection specializes in finding the ideal wedding venue that matches your style and vision. We ensure your wedding location is as perfect as your love story.",
+        "button": "Book Now"
+    },
+    {
+        "id": 3,
+        "name": "Blissful Unions Event Design",
+        "image": "https://images.pexels.com/photos/3091636/pexels-photo-3091636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "price": "$4,800 - $9,800",
+        "short_description": "Designing blissful beginnings.",
+        "details": "Blissful Unions Event Design offers creative event design and planning services to make your wedding a blissful and memorable occasion.",
+        "button": "Book Now"
+    },
+    {
+        "id": 4,
+        "name": "Elegant Invitations & Guest Management",
+        "image": "https://images.pexels.com/photos/5195051/pexels-photo-5195051.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "price": "$1,500 - $4,500",
+        "short_description": "Crafting memorable invitations and seamless guest experiences.",
+        "details": "Elegant Invitations & Guest Management offers elegant and customized wedding invitations, as well as expert guest list management services. We ensure your guests receive a warm welcome and have a seamless experience on your special day.",
+        "button": "Book Now"
+    },
+    {
+        "id": 5,
+        "name": "Charming Invites & Stationery",
+        "image": "https://images.pexels.com/photos/4545090/pexels-photo-4545090.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "price": "$1,000 - $4,000",
+        "short_description": "Setting the tone for your big day.",
+        "details": "Charming Invites & Stationery offers a wide range of beautifully crafted wedding invitations and stationary. From elegant to unique, our designs set the perfect tone for your special day.",
+        "button": "Book Now"
+      }
+      ,
+    {
+        "id": 6,
+        "name": "Moments in Motion Photography & Videography",
+        "image": "https://images.pexels.com/photos/949224/pexels-photo-949224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "price": "$3,800 - $9,000",
+        "short_description": "Capturing memories in both stills and motion.",
+        "details": "Moments in Motion offers comprehensive photography and videography services to document every aspect of your wedding day. Our team ensures that your cherished moments are beautifully captured in both photos and videos.",
+        "button": "Book Now"
+      },
+      {
+        "id": 7,
+        "name": "Royal Reception Management",
+        "image": "https://images.pexels.com/photos/3082764/pexels-photo-3082764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "price": "$4,000 - $8,000",
+        "short_description": "Crafting grand receptions fit for royalty.",
+        "details": "Royal Reception Management specializes in planning and executing grand wedding receptions. From venue selection to entertainment, we ensure every detail is regal and memorable.",
+        "button": "Book Now"
+      },
+      {
+        "id": 8,
+        "name": "Chic Trousseau & Personal Shopping",
+        "image": "https://images.pexels.com/photos/14297213/pexels-photo-14297213.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "price": "$1,500 - $4,000",
+        "short_description": "Elevate your wedding style with personalized trousseaus.",
+        "details": "Chic Trousseau & Personal Shopping offers personalized styling and shopping services for brides and grooms. Let us help you curate a stylish and unique trousseau.",
+        "button": "Book Now"
+      },
+      {
+        "id": 9,
+        "name": "Smart Wedding Budgeting",
+        "image": "https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "price": "$800 - $2,000",
+        "short_description": "Maximize your wedding budget without compromising.",
+        "details": "Smart Wedding Budgeting helps couples manage their wedding expenses efficiently. Our financial experts ensure you get the most value from your budget.",
+        "button": "Book Now"
+      }
+      
+]

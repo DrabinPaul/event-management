@@ -4,17 +4,17 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
     const links = <>
         <NavLink to='/' className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-[#FF444A] underline text-xl font-bold pr-4" : "text-xl font-bold pr-4"
+            isPending ? "pending" : isActive ? "text-[#fe3e01] underline text-xl font-bold pr-4" : "text-xl font-bold pr-4"
         }>Home</NavLink>
         <NavLink to='/donation' className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-[#FF444A] underline text-xl font-bold pr-4" : "text-xl font-bold pr-4"
+            isPending ? "pending" : isActive ? "text-[#fe3e01] underline text-xl font-bold pr-4" : "text-xl font-bold pr-4"
         }>Gallery</NavLink>
         <NavLink to='/statistics' className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-[#FF444A] underline text-xl font-bold" : "text-xl font-bold"
+            isPending ? "pending" : isActive ? "text-[#fe3e01] underline text-xl font-bold" : "text-xl font-bold"
         }>About Us</NavLink>
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 shadow-lg">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -24,7 +24,7 @@ const Header = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">Wedding</a>
+                <a className="text-3xl font-bold text-[#fe3e01]">Dwedding</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

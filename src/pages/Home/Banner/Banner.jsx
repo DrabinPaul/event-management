@@ -1,39 +1,34 @@
-// import React, { Component } from 'react';
-// import ReactDOM from 'react-dom';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
 import banner from '../../../assets/images/pic1.jpg';
 import './style.css'
 
 const Banner = () => {
     return (
-        <div>
+        <div className="">
 
             <Carousel>
-                <div className="relative h-[500px]">
-                    <img src={banner} className="object-cover h-full" />
-                    <p className="legend">Legend 1</p>
-                    <div className="absolute z-[1000] top-20 m-10">
-                        <h3 className="text-white text-5xl uppercase text-left mb-4" >Shoes</h3>
-                        <p className="text-white uppercase text-left">Give a girl the right shoes, <br /> and she can conquer the world. <br /> A lie can travel half way around the world <br /> while the truth is putting on its shoes.</p>
+                <div className="relative h-[550px]">
+                    <img src="https://images.pexels.com/photos/2253842/pexels-photo-2253842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="object-cover h-full" />
+                    <div className="absolute z-[1000] top-40 m-10">
+                        <h3 className="text-5xl uppercase text-left mb-4 text-[#fe3e01]" >Getting Married !</h3>
+                        <p className="text-white text-left">Marriage is the beautiful union of two souls, a journey where love grows <br />stronger with each passing day. It's a promise to stand together through <br />life's highs and lows, forging a bond that's unbreakable. In marriage, <br />two become one, creating a lifetime of shared dreams and cherished memories.</p>
                     </div>
                 </div>
-                <div className="relative h-[500px]">
-                    <img src={banner} className="object-cover h-full" />
-                    <p className="legend">Legend 2</p>
-                    <div className="absolute z-[1000] top-20 m-10">
-                        <h3 className="text-white text-5xl uppercase text-left mb-4">Shoes</h3>
-                        <p className="text-white uppercase text-left">“If the shoe fits, wear it.” “One size  fit all, <br /> but when the shoe fits, it sure feels good.” <br />  force a square foot into a round shoe.” <br />Clothing, when it  on a body, looks lifeless. <br /> Shoes retain their perfect shape, and some even look like art.
-                        </p>
+                <div className="relative h-[550px]">
+                    <img src="https://images.pexels.com/photos/3342697/pexels-photo-3342697.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="object-cover h-full" />
+                    <div className="absolute z-[1000] top-40 m-10">
+                        <h3 className="text-5xl  text-left mb-4 text-[#fe3e01]" >Getting Married !</h3>
+                        <p className="text-white text-left">Marriage is the beautiful union of two souls, a journey where love grows <br />stronger with each passing day. It's a promise to stand together through <br />life's highs and lows, forging a bond that's unbreakable. In marriage, <br />two become one, creating a lifetime of shared dreams and cherished memories.</p>
                     </div>
                 </div>
-                <div className="relative h-[500px]">
-                    <img src={banner} className="object-cover h-full" />
-                    <p className="legend">Legend 3</p>
-                    <div className="absolute z-[1000] top-20 m-10">
-                        <h3 className="text-white text-5xl uppercase text-left mb-4">Shoes</h3>
-                        <p className="text-white uppercase text-left">someone who is certain to win an election or a competition:  a shoo-in for the White House. <br /> The Padres are a shoo-in to win the pennant this season.
-                        </p>
+                <div className="relative h-[550px]">
+                    <img src="https://images.pexels.com/photos/3347413/pexels-photo-3347413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="object-cover h-full" />
+                    <div className="absolute z-[1000] top-40 m-10">
+                        <h3 className="text-5xl text-left mb-4 text-[#fe3e01]" >Getting Married !</h3>
+                        <p className="text-white text-left">Marriage is the beautiful union of two souls, a journey where love grows <br />stronger with each passing day. It's a promise to stand together through <br />life's highs and lows, forging a bond that's unbreakable. In marriage, <br />two become one, creating a lifetime of shared dreams and cherished memories.</p>
                     </div>
                     <div className="thumbs">
 
