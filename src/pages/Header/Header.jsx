@@ -6,10 +6,10 @@ const Header = () => {
         <NavLink to='/' className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-[#fe3e01] underline text-xl font-bold pr-4" : "text-xl font-bold pr-4"
         }>Home</NavLink>
-        <NavLink to='/donation' className={({ isActive, isPending }) =>
+        <NavLink to='/gallery' className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-[#fe3e01] underline text-xl font-bold pr-4" : "text-xl font-bold pr-4"
         }>Gallery</NavLink>
-        <NavLink to='/statistics' className={({ isActive, isPending }) =>
+        <NavLink to='/aboutUs' className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-[#fe3e01] underline text-xl font-bold" : "text-xl font-bold"
         }>About Us</NavLink>
     </>
@@ -24,7 +24,8 @@ const Header = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="text-3xl font-bold text-[#fe3e01]">Dwedding</a>
+                <a className="text-3xl font-bold text-[#fe3e01]">D<span className="text-black">wedding</span></a>
+
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
