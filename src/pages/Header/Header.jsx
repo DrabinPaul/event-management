@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 const Header = () => {
@@ -10,8 +10,12 @@ const Header = () => {
             isPending ? "pending" : isActive ? "text-[#fe3e01] underline text-xl font-bold pr-4" : "text-xl font-bold pr-4"
         }>Gallery</NavLink>
         <NavLink to='/aboutUs' className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-[#fe3e01] underline text-xl font-bold" : "text-xl font-bold"
+            isPending ? "pending" : isActive ? "text-[#fe3e01] underline text-xl font-bold pr-4" : "text-xl font-bold pr-4"
         }>About Us</NavLink>
+        <NavLink to='/login'
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-[#fe3e01] underline text-xl font-bold" : "text-xl font-bold"
+            }>Login</NavLink>
     </>
     return (
         <div className="navbar bg-base-100 shadow-lg">
@@ -29,12 +33,12 @@ const Header = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                   {links}
+                    {links}
                 </ul>
             </div>
-            <div className="navbar-end">
-                <a className="btn">Login</a>
-            </div>
+            <Link className="navbar-end" to="/login">
+                    <button className="btn text-[#fe3e01]">Login</button>
+            </Link>
         </div>
     );
 };
