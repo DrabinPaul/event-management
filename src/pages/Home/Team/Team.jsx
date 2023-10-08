@@ -9,7 +9,7 @@ import { Pagination } from 'swiper/modules';
 
 const Team = () => {
     return (
-        <div className='mb-20'>
+        <div className=''>
             <div>
                 <h2 className='text-center text-4xl pb-2 font-bold'><span className='text-[#fe3e01]'>Dwedding</span> Team</h2>
                 <p className='text-center pb-5'>We make your events smart & impactful by personalised event management services</p>

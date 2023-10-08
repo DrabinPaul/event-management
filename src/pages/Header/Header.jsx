@@ -1,7 +1,18 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../providers/AuthProvider";
 
 
 const Header = () => {
+
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+            .then()
+            .catch()
+    };
+
     const links = <>
         <NavLink to='/' className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-[#fe3e01] underline text-xl font-bold pr-4" : "text-xl font-bold pr-4"
@@ -36,9 +47,32 @@ const Header = () => {
                     {links}
                 </ul>
             </div>
-            <Link className="navbar-end" to="/login">
-                    <button className="btn text-[#fe3e01]">Login</button>
-            </Link>
+
+            <div className="navbar-end ">
+                {
+                    user && <div>
+                       <h2>{user.displayName}</h2>
+                    </div>
+                }
+                <label tabIndex={0} className="avatar pr-2">
+                   { user &&
+                     <div className="w-10 rounded-full">
+                     <img src={user.photoURL} />
+                 </div>
+                   }
+                </label>
+                {
+                    user ?
+                        <button onClick={handleLogOut} className="btn text-[#fe3e01]">Logout</button>
+                        :
+                        <Link className="" to="/login">
+                            <button className="btn text-[#fe3e01]">Login</button>
+                        </Link>
+                }
+            </div>
+
+
+
         </div>
     );
 };
