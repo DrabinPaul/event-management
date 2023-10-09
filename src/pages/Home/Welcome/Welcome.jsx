@@ -4,7 +4,7 @@ const Welcome = () => {
     return (
         <div className='max-w-6xl mx-auto my-20'>
             <div className="card lg:card-side bg-base-100">
-                <figure className=''>
+                <figure>
                     <img className='h-[500px]' src="https://images.pexels.com/photos/2909515/pexels-photo-2909515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Album" />
                 </figure>
                 <div className=" lg:pl-10 mt-10 lg:w-[800px] p-5 lg:p-0">

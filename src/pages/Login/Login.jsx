@@ -22,9 +22,15 @@ const Login = () => {
 
         setLoginError('');
 
+        const emailCondition = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
-               let validation =
-          /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{6,}$/;
+        if (!emailCondition.test(email)) {
+            setLoginError("Email is invalid");
+            return;
+        }
+
+        let validation =
+            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{6,}$/;
 
         if (!validation.test(password)) {
             setLoginError("Worng password");
@@ -34,7 +40,8 @@ const Login = () => {
         logIn(email, password)
             .then(result => {
                 console.log(result.user);
-                navigate(location?.state ? location.state : '/');
+                e.target.reset();
+                navigate(location?.state ? location.state : "/");
             })
             .catch(error => {
                 console.error(error);
@@ -44,7 +51,6 @@ const Login = () => {
     const handleGoogleLogin = () => {
         signInWithGoogle()
             .then((result) => {
-
                 console.log(result.user);
                 navigate(location?.state ? location.state : "/");
             })

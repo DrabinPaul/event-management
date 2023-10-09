@@ -86,7 +86,7 @@ const Gallery = () => {
             <div className='max-w-6xl mx-auto mb-10'>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
                     <div>
-                        <img src="https://images.pexels.com/photos/10607341/pexels-photo-10607341.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                        <img data-aos="fade-right" src="https://images.pexels.com/photos/10607341/pexels-photo-10607341.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                         <h2 className='text-center text-2xl font-bold  pt-5'>Wedding trends to obsess over this year</h2>
                         <div className='flex justify-center items-center py-5'>
                             <hr className="w-[300px] md:w-[550px] border " style={{ borderColor: '#fe3e01' }} />
@@ -94,7 +94,7 @@ const Gallery = () => {
                         <p className='text-center text-base font-medium text-[#777]'>If you've always dreamt of carrying a bouquet of old fashioned garden roses down the aisle, but your budget doesn't quite match up to the dream, try this!</p>
                     </div>
                     <div>
-                        <img src="https://images.pexels.com/photos/57980/pexels-photo-57980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                        <img data-aos="fade-left" src="https://images.pexels.com/photos/57980/pexels-photo-57980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                         <h2 className='text-center text-2xl font-bold  pt-5'>The ultimate guide to plan your wedding</h2>
 
                         <div className='flex justify-center items-center py-5'>

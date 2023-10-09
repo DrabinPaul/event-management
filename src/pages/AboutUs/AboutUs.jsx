@@ -14,7 +14,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-center items-center py-2 absolute top-[150px]">
+                <div data-aos="fade-down" className="flex justify-center items-center py-2 absolute top-[150px]">
                     <hr className="h-[4px] border-l-4" style={{ borderColor: '#fe3e01', height: '80px' }} />
                 </div>
             </div>
