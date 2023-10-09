@@ -22,18 +22,18 @@ const Login = () => {
 
         setLoginError('');
 
-        const emailCondition = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        let validation =
+        /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{6,}$/;
+        let emailValidation = 
+        /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
-        if (!emailCondition.test(email)) {
-            setLoginError("Email is invalid");
+       
+         if (!validation.test(password)) {
+            setLoginError("Worng password");
             return;
         }
-
-        let validation =
-            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{6,}$/;
-
-        if (!validation.test(password)) {
-            setLoginError("Worng password");
+        else if (!emailValidation.test(email)) {
+            alert("Email is invalid");
             return;
         }
 

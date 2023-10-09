@@ -7,7 +7,7 @@ import { FcGoogle } from 'react-icons/fc';
 const Register = () => {
 
     const { createUser, setUser, signInWithGoogle } = useContext(AuthContext)
-    const location = useLocation(); 
+    const location = useLocation();
     console.log('locaction login', location);
     const navigate = useNavigate();
     const [success, setSuccess] = useState('');
@@ -40,6 +40,9 @@ const Register = () => {
             return;
         }
 
+
+
+
         createUser(email, password)
             .then(result => {
                 e.target.reset();
@@ -48,10 +51,8 @@ const Register = () => {
                 navigate(location?.state ? location.state : "/");
                 updateProfile(result.user, { displayName: name, photoURL: photo })
                     .then(() => {
-                        setUser((presentUser) => {
-                            presentUser.displayName = name;
-                            presentUser.photoURL = photo;
-                        })
+                        e.target.reset();
+                        window.location.href = "/";
                     })
                     .catch(error => {
                         console.error(error)
@@ -116,7 +117,7 @@ const Register = () => {
                                         <div className='flex justify-center items-center text-base font-semibold'>
                                             Or signin with
                                             <span className='pl-2 cursor-pointer' onClick={handleGoogle}>
-                                            <span className='text-2xl'><FcGoogle></FcGoogle></span>
+                                                <span className='text-2xl'><FcGoogle></FcGoogle></span>
                                             </span>
                                         </div>
                                     </label>

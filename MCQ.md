@@ -20,8 +20,8 @@ console.log(greetign);
 
 #### Answer:- B: ReferenceError: greetign is not defined
 
-<i>Write your explanation here</i>
-The variable name is greeting.Here declared the variable as 'greeting'.But greeting is not a defiend variable.This is a empty object.That's why the answer is "ReferenceError: greetign is not defined".
+<i>The variable name is 'greeting,' and it was declared as 'greeting.' However, 'greeting' is not a defined variable. Instead, it contains an empty object. That's why the answer is "ReferenceError: greetign is not defined."</i>
+
 
 </p>
 </details>
@@ -46,8 +46,8 @@ sum(1, "2");
 
 #### Answer: "12"
 
-<i>Write your explanation here</i>
-Here is trying to add concatenation a string with a number.Javascript will convet the number to a string.that's why the answer is "12".
+<i>JavaScript will automatically convert the number to a string when attempting to concatenate it with a string, resulting in the string "12".</i>
+
 
 </p>
 </details>
@@ -73,8 +73,7 @@ console.log(food);
 
 #### Answer: A: ['🍕', '🍫', '🥑', '🍔']
 
-<i>Write your explanation here</i>
-There is an array which called 'food'.There also have an array call 'info'.The "info.favoriteFood" property is assigned the value 🍝.But this does not affect the 'food' array.Thereofore whene we log the 'food' array,it will still contain the orginal elements.Thats why the correct answer is ['🍕', '🍫', '🥑', '🍔']
+<i>The 'food' array remains unchanged despite assigning the value 🍝 to the "info.favoriteFood" property. Consequently, when we log the 'food' array, it retains its original elements. This is why the correct answer is ['🍕', '🍫', '🥑', '🍔'].</i>
 
 </p>
 </details>
@@ -99,8 +98,8 @@ console.log(sayHi());
 
 #### Answer: B: Hi there, undefined
 
-<i>Write your explanation here</i>
-When we call 'sayHi()' without providing any argument,it uses the default value of undefind for 'name'. That's why the correct answer is "Hi there, undefined"
+<i>When 'sayHi()' is invoked without specifying any argument, it defaults to using 'undefined' as the value for 'name.' This is why the correct output is "Hi there, undefined."</i>
+
 
 </p>
 </details>
@@ -128,8 +127,8 @@ console.log(count);
 
 #### Answer: C: 3
 
-<i>Write your explanation here</i>
-Iterating the 'nums' array by using "forEach".The callback function.If each number is truthy,the condition is true.then count is increase by 1 for each of theme.That's why the answer is "3".
+<i>Iterating through the 'nums' array using the "forEach" method, we increment the count by 1 for each truthy number encountered in the callback function. This is why the final answer is "3."</i>
+
 
 </p>
 </details>
