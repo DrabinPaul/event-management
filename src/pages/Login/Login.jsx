@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
 import { FcGoogle } from 'react-icons/fc';
@@ -9,7 +9,7 @@ const Login = () => {
     const location = useLocation();
     console.log('locaction login', location);
     const navigate = useNavigate()
-    // const [registerError, setRegisterError] = useState('');
+    const [loginError, setLoginError] = useState('');
 
 
     const handleLogin = e => {
@@ -20,7 +20,16 @@ const Login = () => {
         const password = form.get('password');
         console.log(email, password);
 
-        // setRegisterError('');
+        setLoginError('');
+
+
+               let validation =
+          /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{6,}$/;
+
+        if (!validation.test(password)) {
+            setLoginError("Worng password");
+            return;
+        }
 
         logIn(email, password)
             .then(result => {
@@ -75,7 +84,7 @@ const Login = () => {
                                     </label>
                                     <label>
                                         <div className='flex justify-center items-center text-base font-semibold'>
-                                                Or signin with
+                                            Or signin with
                                             <span className='pl-2 cursor-pointer' onClick={handleGoogleLogin}>
                                                 <span className='text-2xl'><FcGoogle></FcGoogle></span>
                                             </span>
@@ -86,6 +95,11 @@ const Login = () => {
                                     <button className="btn bg-[#fe3e01] text-white">Login</button>
                                 </div>
                             </form>
+                            <div className='pb-2'>
+                                {
+                                    loginError && <p className='text-red-500 text-sm text-center font-bold '>{loginError}</p>
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>

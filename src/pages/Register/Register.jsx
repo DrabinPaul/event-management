@@ -27,16 +27,11 @@ const Register = () => {
         setSuccess('');
         setRegisterError('');
 
-        if (password.length < 6) {
-            setRegisterError("Password should be at least 6 characters or more")
-            return;
-        }
-        else if(!/[A-Z]/.test(password)){
+        let validation =
+            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{6,}$/;
+
+        if (!validation.test(password)) {
             setRegisterError("Your password should have one capital letter")
-            return;
-        }
-        else if(!/[!@#$%^&*]/.test(password)){
-            setRegisterError("Your password should have one special character")
             return;
         }
 
@@ -44,13 +39,12 @@ const Register = () => {
             .then(result => {
                 setSuccess("User created successfully")
                 console.log(result.user);
+                navigate(location?.state ? location.state : "/");
                 updateProfile(result.user, { displayName: name, photoURL: photo })
                     .then(() => {
                         setUser((presentUser) => {
                             presentUser.displayName = name;
                             presentUser.photoURL = photo;
-
-                            navigate(location?.state ? location.state : "/");
                         })
                     })
                     .catch(error => {
@@ -116,7 +110,7 @@ const Register = () => {
                                         <div className='flex justify-center items-center text-base font-semibold'>
                                             Or signin with
                                             <span className='pl-2 cursor-pointer' onClick={handleGoogle}>
-                                            <span className='text-2xl'><FcGoogle></FcGoogle></span>
+                                                <span className='text-2xl'><FcGoogle></FcGoogle></span>
                                             </span>
                                         </div>
                                     </label>
