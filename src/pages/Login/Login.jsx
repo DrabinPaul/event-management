@@ -24,15 +24,18 @@ const Login = () => {
 
         let validation =
         /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{6,}$/;
-        let emailValidation = 
-        /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        
 
        
          if (!validation.test(password)) {
             setLoginError("Worng password");
             return;
         }
-        else if (!emailValidation.test(email)) {
+
+        let emailValidation = 
+        /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        
+        if (!emailValidation.test(email)) {
             alert("Email is invalid");
             return;
         }
