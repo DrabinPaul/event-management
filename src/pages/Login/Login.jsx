@@ -1,13 +1,16 @@
 import React, { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
+import { FcGoogle } from 'react-icons/fc';
 
 const Login = () => {
 
-    const { logIn, googleSignIn } = useContext(AuthContext);
+    const { logIn, signInWithGoogle } = useContext(AuthContext);
     const location = useLocation();
     console.log('locaction login', location);
     const navigate = useNavigate()
+    // const [registerError, setRegisterError] = useState('');
+
 
     const handleLogin = e => {
         e.preventDefault();
@@ -17,6 +20,8 @@ const Login = () => {
         const password = form.get('password');
         console.log(email, password);
 
+        // setRegisterError('');
+
         logIn(email, password)
             .then(result => {
                 console.log(result.user);
@@ -25,26 +30,31 @@ const Login = () => {
             .catch(error => {
                 console.error(error);
             })
-            
-
-
     }
+
+    const handleGoogleLogin = () => {
+        signInWithGoogle()
+            .then((result) => {
+
+                console.log(result.user);
+                navigate(location?.state ? location.state : "/");
+            })
+            .catch((errror) => {
+                console.error(errror);
+            });
+    };
     return (
         <div>
-            <div>
-                <div className="hero min-h-screen bg-base-200">
+            <div className='mb-10 lg:mb-4'>
+                <div className="hero min-h-screen">
                     <div className="hero-content  flex-col lg:flex-row">
                         <div className="text-center lg:text-left">
                             <div className='flex justify-center pb-5'>
                                 <img src="https://pro-theme.com/html/dvents/assets/media/general/ui-decor-1.png" alt="" />
                             </div>
                             <h1 className="text-5xl text-center font-extrabold"><span className='text-[#fe3e01]'>Login</span> now!</h1>
-                            <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <p className="py-6 text-center text-[#777]">Step into our magical wedding world and be part of our love story. Login now to share our special day</p>
 
-                            <div>
-                                <h2>Or signin with google</h2>
-                                <button className='btn'>Google</button>
-                            </div>
                         </div>
 
                         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
@@ -62,6 +72,14 @@ const Login = () => {
                                     <input type="password" name="password" placeholder="password" className="input input-bordered" required />
                                     <label className="label">
                                         <p className="text-center mt-5">Do not have an account?<Link className="text-[#fe3e01] font-bold" to="/register"> Register</Link></p>
+                                    </label>
+                                    <label>
+                                        <div className='flex justify-center items-center text-base font-semibold'>
+                                                Or signin with
+                                            <span className='pl-2 cursor-pointer' onClick={handleGoogleLogin}>
+                                                <span className='text-2xl'><FcGoogle></FcGoogle></span>
+                                            </span>
+                                        </div>
                                     </label>
                                 </div>
                                 <div className="form-control mt-6">

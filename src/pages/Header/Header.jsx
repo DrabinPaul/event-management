@@ -39,7 +39,7 @@ const Header = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="text-3xl font-bold text-[#fe3e01]">D<span className="text-black">wedding</span></a>
+                <a className="text-2xl lg:text-3xl font-bold text-[#fe3e01]">D<span className="text-black">wedding</span></a>
 
             </div>
             <div className="navbar-center hidden lg:flex">
@@ -51,10 +51,10 @@ const Header = () => {
             <div className="navbar-end ">
                 {
                     user && <div>
-                       <h2>{user.displayName}</h2>
+                       <h2 className="text-black font-semibold text-sm  lg:text-lg pr-2">{user.displayName}</h2>
                     </div>
                 }
-                <label tabIndex={0} className="avatar pr-2">
+                <label tabIndex={0} className="avatar online mr-2">
                    { user &&
                      <div className="w-10 rounded-full">
                      <img src={user.photoURL} />

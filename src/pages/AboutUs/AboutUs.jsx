@@ -24,7 +24,7 @@ const AboutUs = () => {
                     <img src="https://pro-theme.com/html/dvents/assets/media/general/ui-decor-1.png" alt="" />
                 </div>
                 <h2 className='text-4xl font-bold text-center pb-2'>We <span className='text-[#fe3e01]'>Create Events</span> That Lasts</h2>
-                <p className='text-center text-[#777] font-medium'>From Wedding Functions to Birthday Parties or Corporate Events to Musical Functions, <br />We offer full range of Events Management Services that scale to your needs & budget.</p>
+                <p className='text-center text-[#777] font-medium'>Wedding event management: Crafting your dream wedding <br />with meticulous planning and creative expertise</p>
 
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 p-5 lg:p-0'>
 
@@ -33,7 +33,7 @@ const AboutUs = () => {
                         <img className="w-full h-[200px]" src="https://images.pexels.com/photos/3082764/pexels-photo-3082764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="picture" />
                         <div className="card-body h-[110px]">
                             <h3 className="text-xl font-bold text-center">Our Vision</h3>
-                            <p className='text-center text-[#777]'>Aorem ipsum dolor sit amet consectetur elit sed tempor incididunt ut labore etua dolore mag aliqua minim veniam quis nostrud exercitation nostrud exercitation</p>
+                            <p className='text-center text-[#777]'>Our vision is to create unforgettable wedding experiences that bring dreams to life with creativity and attention to detail.</p>
 
                         </div>
                     </div>
@@ -42,7 +42,7 @@ const AboutUs = () => {
                         <img className="w-full h-[200px]" src="https://images.pexels.com/photos/1045541/pexels-photo-1045541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="picture" />
                         <div className="card-body h-[110px]">
                             <h3 className="text-xl font-bold text-center">Our Approach</h3>
-                            <p className='text-center text-[#777]'>Aorem ipsum dolor sit amet consectetur elit sed tempor incididunt ut labore etua dolore mag aliqua minim veniam quis nostrud exercitation nostrud exercitation</p>
+                            <p className='text-center text-[#777]'>Our approach is client-centered, ensuring your unique love story guides every detail to create unforgettable weddings</p>
 
                         </div>
                     </div>
@@ -51,7 +51,7 @@ const AboutUs = () => {
                         <img className="w-full h-[200px]" src="https://images.pexels.com/photos/1238944/pexels-photo-1238944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="picture" />
                         <div className="card-body h-[110px]">
                             <h3 className="text-xl font-bold text-center">Our Goals</h3>
-                            <p className='text-center text-[#777]'>Aorem ipsum dolor sit amet consectetur elit sed tempor incididunt ut labore etua dolore mag aliqua minim veniam quis nostrud exercitation nostrud exercitation</p>
+                            <p className='text-center text-[#777]'>Our goals are to deliver flawless weddings, exceed client expectations, and create cherished memories that last a lifetime.</p>
 
                         </div>
                     </div>
@@ -67,8 +67,8 @@ const AboutUs = () => {
                             <img src="https://pro-theme.com/html/dvents/assets/media/general/ui-decor-1.png" alt="" />
                         </div>
                         <h2 className="text-center text-4xl font-bold pb-10">Why Choose <span className='text-[#fe3e01]'>Dweddings</span></h2>
-                        <p className='text-xl text-[#777] font-semibold pb-5'>Making your events smarter & impactful by personalised event</p>
-                        <p>Welcome to Dweddings, where we specialize in making your events smarter and more impactful through personalized event management. We believe in turning your dreams into unforgettable moments, meticulously crafting every detail to create a truly unique and memorable experience. With our dedicated team and innovative approach, we're here to transform your vision into reality, one event at a time. Let's embark on a journey together, where your special occasions are not just celebrated but elevated to new heights of elegance and distinction. Welcome to a world of exceptional events, welcome to Dweddings.</p>
+                        <p className='text-xl  font-semibold pb-5'>Making your events smarter & impactful by personalised event</p>
+                        <p>Welcome to Dweddings, where we specialize in making your events smarter and more impactful through personalized event management. We believe in turning your dreams into unforgettable moments, meticulously crafting every detail to create a truly unique and memorable experience. With our dedicated team and innovative approach, we're here to transform your vision into reality, one event at a time. Let's embark on a journey together, where your special occasions are not just celebrated but elevated to new heights of elegance and distinction.</p>
                     </div>
                     <div className=''>
                         <img className='h-[500px] lg:w-[500px]' src="https://images.pexels.com/photos/2788488/pexels-photo-2788488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Album" />
@@ -78,12 +78,9 @@ const AboutUs = () => {
             </div>
 
             <div>
-                <h2 className='text-4xl font-bold text-center pb-2'>
-                    We <span className='text-[#fe3e01]'>Create Events</span> That Lasts
-                </h2>
+                <h2 className='text-4xl font-bold text-center pb-2'>Dwedding<span className='text-[#fe3e01]'> Events</span></h2>
                 <p className='text-center text-[#777] font-medium'>
-                    From Wedding Functions to Birthday Parties or Corporate Events to Musical Functions, <br />
-                    We offer full range of Events Management Services that scale to your needs & budget.
+                Let us be your guiding hand on your special day, <br />turning your vision into a timeless celebration of love.
                 </p>
 
                 <div className='flex justify-center mt-10'>

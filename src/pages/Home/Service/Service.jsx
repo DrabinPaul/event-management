@@ -11,9 +11,9 @@ const Service = ({ service }) => {
                 </figure>
                 <div className="card-body rounded-b-lg h-[120px]">
                     <h3 className=" py-1 rounded-lg text-xl font-bold text-center">{name}</h3>
-                    <h2 className="text-base font-medium text-center">{short_description}</h2>
+                    <h2 className="text-base font-medium text-center text-[#777]">{short_description}</h2>
                 </div>
-                <Link className="ml-5 mb-5 pt-6 flex justify-center" to={`/serviceDetails/${id}`}>
+                <Link className="ml-5 mb-5 pt-3 flex justify-center" to={`/serviceDetails/${id}`}>
                     <button className="border bg-[#fe3e01] text-white rounded-md px-4 py-1 mt-2 uppercase font-medium">Details</button>
                 </Link>            
                 </div>

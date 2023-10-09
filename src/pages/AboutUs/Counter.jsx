@@ -23,7 +23,7 @@ const CounterAnimation = () => {
     return (
         <div>
             <div className='text-center mt-5'>
-                <p className='text-3xl font-bold'>Over <span className='text-[#fe3e01]'>{Math.floor(count)}+</span> Events Managed</p>
+                <p className='text-3xl font-bold'>Over <span className='text-[#fe3e01]'>{Math.floor(count)}+</span> Wedding Events Managed</p>
             </div>
         </div>
     );

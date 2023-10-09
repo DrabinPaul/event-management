@@ -12,9 +12,9 @@ const Gallery = () => {
     return (
         <div className='mb-10'>
             <h2 className='text-center text-4xl font-bold text-[#fe3e01] mt-10'>Wedding Moments</h2>
-            <p className='text-center pt-2'>Capture your best moments</p>
+            <p className='text-center pt-2 text-[#777]'>Capture your best moments</p>
             <div className='flex justify-center items-center py-5'>
-                <hr className="w-[550px] border " style={{ borderColor: '#fe3e01' }} />
+                <hr className="w-[300px] lg:w-[550px] border " style={{ borderColor: '#fe3e01' }} />
             </div>
             <div className='h-[400px] mb-10'>
                 <>
@@ -78,7 +78,7 @@ const Gallery = () => {
 
 
             <h2 className='text-center text-4xl font-bold text-[#fe3e01] mt-20' >Wedding Blog</h2>
-            <p className='text-center pt-5'>Blogs best moments</p>
+            <p className='text-center pt-5 text-[#777]'>Blogs best moments</p>
             <div className='flex justify-center items-center py-5'>
                 <hr className="w-[300px] md:w-[550px] border " style={{ borderColor: '#fe3e01' }} />
             </div>
@@ -91,7 +91,7 @@ const Gallery = () => {
                         <div className='flex justify-center items-center py-5'>
                             <hr className="w-[300px] md:w-[550px] border " style={{ borderColor: '#fe3e01' }} />
                         </div>
-                        <p className='text-center text-base font-medium'>If you've always dreamt of carrying a bouquet of old fashioned garden roses down the aisle, but your budget doesn't quite match up to the dream, try this!</p>
+                        <p className='text-center text-base font-medium text-[#777]'>If you've always dreamt of carrying a bouquet of old fashioned garden roses down the aisle, but your budget doesn't quite match up to the dream, try this!</p>
                     </div>
                     <div>
                         <img src="https://images.pexels.com/photos/57980/pexels-photo-57980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
@@ -100,7 +100,7 @@ const Gallery = () => {
                         <div className='flex justify-center items-center py-5'>
                             <hr className="w-[300px] md:w-[550px] border " style={{ borderColor: '#fe3e01' }} />
                         </div>
-                        <p className='text-center text-base font-medium'>If you've always dreamt of carrying a bouquet of old fashioned garden roses down the aisle, but your budget doesn't quite match up to the dream, try this!</p>
+                        <p className='text-center text-base font-medium text-[#777]'>If you've always dreamt of carrying a bouquet of old fashioned garden roses down the aisle, but your budget doesn't quite match up to the dream, try this!</p>
                     </div>
 
                 </div>
@@ -109,7 +109,7 @@ const Gallery = () => {
 
             <div className='max-w-6xl mx-auto'>
                 <h2 className='text-center text-4xl font-bold text-[#fe3e01] mt-20'>Upcoming Weddings</h2>
-                <p className='text-center pt-5'>Couples are getting marreid</p>
+                <p className='text-center pt-5 text-[#777]'>Couples are getting marreid</p>
                 <div className='flex justify-center items-center py-5'>
                     <hr className="w-[300px] md:w-[550px] border " style={{ borderColor: '#fe3e01' }} />
                 </div>
@@ -162,11 +162,11 @@ const Gallery = () => {
 
             <div className="max-w-6xl mx-auto mt-20">
                 <h2 className="text-center text-4xl font-bold text-[#fe3e01]">Couples Feedback</h2>
-                <p className='text-center pt-5'>Happy couples feedback</p>
+                <p className='text-center pt-5 text-[#777]'>Happy couples feedback</p>
                 <div className="flex justify-center items-center py-2">
                     <hr className="w-[300px] md:w-[550px] border" style={{ borderColor: '#fe3e01' }} />
                 </div>
-                <div className="grid grid-cols-3 gap-10 mt-5">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-5 p-5 lg:p-0">
 
                     <div className="comment-box">
                         <div className="avatar">
@@ -176,7 +176,7 @@ const Gallery = () => {
                         </div>
                         <div className="comment-content">
                             <h3 className="comment-author text-base font-semibold text-[#fe3e01]">Sarah and Daniel</h3>
-                            <p className="comment-text">
+                            <p className="comment-text text-[#777]">
                             Thank you for capturing our special day so beautifully! Your attention to detail and artistic eye truly made our wedding photos exceptional.
                             </p>
                         </div>
@@ -191,7 +191,7 @@ const Gallery = () => {
                         </div>
                         <div className="comment-content">
                             <h3 className="comment-author text-base font-semibold text-[#fe3e01]">Emily and Michael</h3>
-                            <p className="comment-text">
+                            <p className="comment-text text-[#777]">
                             The wedding decoration was absolutely breathtaking! It transformed the venue into a fairytale dream. Thank you for making our special day truly magical.
                             </p>
                         </div>
@@ -205,7 +205,7 @@ const Gallery = () => {
                         </div>
                         <div className="comment-content">
                             <h3 className="comment-author text-base font-semibold text-[#fe3e01]">Ava and Ethan</h3>
-                            <p className="comment-text">
+                            <p className="comment-text text-[#777]">
                             Our wedding was a dream come true, thanks to the meticulous planning and execution by the wedding management team. Every detail was flawless, and we could truly relax and enjoy our special day.
                             </p>
                         </div>

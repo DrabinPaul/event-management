@@ -12,7 +12,7 @@ const Team = () => {
         <div className=''>
             <div>
                 <h2 className='text-center text-4xl pb-2 font-bold'><span className='text-[#fe3e01]'>Dwedding</span> Team</h2>
-                <p className='text-center pb-5'>We make your events smart & impactful by personalised event management services</p>
+                <p className='text-center pb-5 text-[#777]'>We make your events smart & impactful by personalised event management services</p>
             </div>
             <>
                 <Swiper
@@ -26,19 +26,19 @@ const Team = () => {
                 >
                     <SwiperSlide>
                         <div className='relative'>
-                            <img src="https://images.pexels.com/photos/3984863/pexels-photo-3984863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""  />
-                            <div className="absolute z-[1000] top-48 ml-2 bg-[#fe3e01] flex items-center  rounded-r-lg w-[310px] px-4 py-2">
-                                <h3 className="text-xl text-left pr-2 text-white font-bold uppercase mb-2" >Lara <br />Gomez</h3>
-                                <p className="text-base text-center">Professional wedding dress designer</p>
+                            <img src="https://images.pexels.com/photos/4348194/pexels-photo-4348194.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""  />
+                            <div className="absolute z-[1000] top-48 ml-2 bg-[#fe3e01] items-center rounded-r-lg flex w-[310px]  px-4 py-2">
+                                <h3 className="text-xl text-left text-white font-bold uppercase mb-2" >Selana <br />Gomez</h3>
+                                <p className="text-base text-center ml-5">Wedding  specialist</p>
                             </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className='relative'>
-                            <img src="https://images.pexels.com/photos/4348194/pexels-photo-4348194.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""  />
-                            <div className="absolute z-[1000] top-48 ml-2 bg-[#fe3e01] items-center rounded-r-lg flex w-[310px]  px-4 py-2">
-                                <h3 className="text-xl text-left text-white font-bold uppercase mb-2" >Selana <br />Gomez</h3>
-                                <p className="text-base text-center">Professional wedding decor specialist</p>
+                            <img src="https://images.pexels.com/photos/12846590/pexels-photo-12846590.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""  />
+                            <div className="absolute z-[1000] top-48 ml-2 bg-[#fe3e01] flex items-center  rounded-r-lg w-[310px] px-4 py-2">
+                                <h3 className="text-xl text-left pr-2 text-white font-bold uppercase mb-2" >Lara <br />Gomez</h3>
+                                <p className="text-base text-center ml-5">Wedding photographer </p>
                             </div>
                         </div>
                     </SwiperSlide>
@@ -46,26 +46,26 @@ const Team = () => {
                         <div className='relative'>
                             <img src="https://images.pexels.com/photos/5668870/pexels-photo-5668870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""  />
                             <div className="absolute z-[1000] top-48 ml-2 bg-[#fe3e01] flex items-center text-center rounded-r-lg w-[310px]  px-4 py-2">
-                                <h3 className="text-xl text-left pr-4 text-white font-bold uppercase mb-2" >Sora<br />Shimazaki</h3>
-                                <p className="text-base text-center">Best for buddget</p>
+                                <h3 className="text-xl text-left text-white font-bold uppercase mb-2" >Sora<br />Shimazaki</h3>
+                                <p className="text-base text-center ml-2">Anniversary specialist</p>
                             </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className='relative'>
                             <img src="https://images.pexels.com/photos/3873745/pexels-photo-3873745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""  />
-                            <div className="absolute z-[1000] top-40 m-10 bg-[#fe3e01] justify-center items-center rounded flex w-[330px]  px-4 py-2">
-                                <h3 className="text-xl text-white text-left font-bold uppercase mb-2" >Steve <br />Jobs</h3>
-                                <p className="text-base text-center">Guest management specialist for the ara</p>
+                            <div className="absolute z-[1000] top-48 ml-2 bg-[#fe3e01] flex items-center text-center rounded-r-lg w-[310px]  px-4 py-2">
+                                <h3 className="text-xl text-left  text-white font-bold uppercase mb-2" >Benjamin<br />Smith</h3>
+                                <p className="text-base text-center ml-5">Party specialist</p>
                             </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className='relative'>
                             <img src="https://images.pexels.com/photos/4427506/pexels-photo-4427506.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-                            <div className="absolute z-[1000] top-40 m-10 bg-[#fe3e01] justify-center items-center rounded flex w-[330px]  px-4 py-2">
-                                <h3 className="text-xl text-left text-white font-bold uppercase mb-2" >Liza<br />Summer</h3>
-                                <p className="text-center text-base">Reception Management specialist for every</p>
+                            <div className="absolute z-[1000] top-48 ml-2 bg-[#fe3e01] flex items-center text-center rounded-r-lg w-[310px]  px-4 py-2">
+                                <h3 className="text-xl text-left pr-2 text-white font-bold uppercase mb-2" >Olivia <br />Davis</h3>
+                                <p className="text-base text-center ml-5">Honeymoon specialist</p>
                             </div>
                         </div>
                     </SwiperSlide>
